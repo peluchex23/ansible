@@ -4,5 +4,9 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-    - name: Server Hostname
-      shell: hostname
+    - name: Execute the Uptime command over Command module
+      register: uptimeoutput
+      command: "uptime"
+
+    - debug:
+          var: uptimeoutput.stdout_lines
