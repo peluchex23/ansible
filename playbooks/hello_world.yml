@@ -2,7 +2,7 @@
   hosts: all
   
   roles:
-    - role: '../roles'
+    - role: '../roles/centos-update-role'
     - centos-update-role
     
   tasks:
