@@ -1,5 +1,9 @@
 - name: Hello World Sample
   hosts: all
+  
+  roles:
+    - centos-update-role
+    
   tasks:
     - name: Hello Message
       debug:
