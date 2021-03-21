@@ -1,9 +1,9 @@
 - name: Hello World Sample
   hosts: all
   
-    #  roles:
-    #    - role: '../roles/centos-update-role'
-    #    - centos-update-role
+  roles:
+    - role: '../roles'
+    - centos-update-role
     
   tasks:
     - name: Hello Message
