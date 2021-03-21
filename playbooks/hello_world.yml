@@ -8,7 +8,8 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-    - name: Execute the hostname command over Command module
+
+    - name: Execute the hostname command
       register: hostnameoutput
       command: "hostname"
 
