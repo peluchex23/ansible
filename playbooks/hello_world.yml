@@ -2,8 +2,7 @@
   hosts: all
   
   roles:
-    - role: '../roles'
-    - centos-update-role
+    - role: '../roles/centos-update-role'
     
   tasks:
     - name: Hello Message
